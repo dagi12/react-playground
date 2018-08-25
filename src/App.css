@@ -26,3 +26,30 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+.absolute-m {
+  position: absolute;
+  width: 96%;
+}
+
+.multi-step > div:nth-child(2) {
+  height: 30px;
+}
+
+.fade-step-enter {
+  opacity: 0.01;
+}
+
+.fade-step-enter.fade-step-enter-active {
+  opacity: 1;
+  transition: opacity 300ms ease-in;
+}
+
+.fade-step-exit {
+  opacity: 1;
+}
+
+.fade-step-exit.fade-step-exit-active {
+  opacity: 0.01;
+  transition: opacity 300ms ease-in;
+}
