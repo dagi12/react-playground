@@ -15,13 +15,13 @@ class TempVInput extends Component {
     return (
       <MyFormGroup label={this.props.label} error={this.props.error} required={this.props.required}>
         <input
-          id={this.props.id}
           name={this.props.name}
           type={this.type}
           className="form-control"
           spellCheck="false"
           value={this.props.value}
           onChange={this.props.onChange}
+          onBlur={this.props.onBlur}
           disabled={this.props.readOnly}
           maxLength={this.props.maxLength}
         />

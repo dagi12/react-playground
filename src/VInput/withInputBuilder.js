@@ -5,6 +5,6 @@ import React from 'react';
 
 export const withInputBuilder = WrappedComponent => ({error, isUsed, autoCompleteRef, ...props}) => (
   <WrappedComponent error={!!error} {...props} ref={autoCompleteRef}>
-    {error}
+    {isUsed && error}
   </WrappedComponent>
 );
